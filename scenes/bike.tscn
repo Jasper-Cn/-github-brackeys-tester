@@ -77,6 +77,6 @@ scale = Vector2(0.015, 0.015)
 sprite_frames = SubResource("SpriteFrames_fdhfo")
 autoplay = "default"
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 
 [connection signal="timeout" from="Stun Timer" to="." method="_on_stun_timer_timeout"]
