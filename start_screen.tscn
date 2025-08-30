@@ -1,0 +1,51 @@
+[gd_scene load_steps=3 format=3 uid="uid://bfned7ytusrwp"]
+
+[ext_resource type="Script" uid="uid://bfvddbfj7ixi2" path="res://start_screen.gd" id="1_pevhg"]
+[ext_resource type="FontFile" path="res://assets/Gaegu-Bold.ttf" id="2_afy8x"]
+
+[node name="start_screen" type="Node2D"]
+script = ExtResource("1_pevhg")
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+position = Vector2(115.109, -271.267)
+scale = Vector2(4.03216, 6.61986)
+polygon = PackedVector2Array(-52, 25.7255, 743, 25.098, 738, 355.137, -49, 356.392)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -435.0
+offset_top = -259.0
+offset_right = 396.0
+offset_bottom = 12.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_afy8x")
+theme_override_font_sizes/font_size = 120
+text = "Biscuit Delivery
+Simulator"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 349.0
+offset_top = 364.0
+offset_right = 691.0
+offset_bottom = 491.0
+theme_override_fonts/font = ExtResource("2_afy8x")
+theme_override_font_sizes/font_size = 75
+text = "Start Game!"

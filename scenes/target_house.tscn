@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://8nvv8hcnnes5"]
+
+[ext_resource type="Script" uid="uid://cgdyc3ckgxvog" path="res://scripts/target_house.gd" id="1_nx08e"]
+[ext_resource type="Texture2D" uid="uid://bedgqqr02ks5w" path="res://assets/handmade/white_arrow.webp" id="2_nx08e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4hs0r"]
+size = Vector2(29.5, 77.25)
+
+[node name="target_house" type="Area2D"]
+z_index = 5
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_nx08e")
+
+[node name="arrow" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(0, 41)
+scale = Vector2(0.0137756, 0.0137756)
+texture = ExtResource("2_nx08e")
+offset = Vector2(0.000137329, -1234.07)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 18.375)
+shape = SubResource("RectangleShape2D_4hs0r")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

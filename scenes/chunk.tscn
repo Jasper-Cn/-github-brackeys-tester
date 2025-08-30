@@ -1,0 +1,51 @@
+[gd_scene load_steps=4 format=3 uid="uid://od0hx2lbegjy"]
+
+[ext_resource type="Texture2D" uid="uid://cxfrhyvp3fmdh" path="res://assets/handmade/hosues.webp" id="1_jtw3q"]
+[ext_resource type="Script" uid="uid://byys84aifmc3t" path="res://scripts/Chunks.gd" id="2_c3gog"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t6mhj"]
+size = Vector2(64, 100)
+
+[node name="Chunk" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_jtw3q")
+
+[node name="New Chunk Spawn Detector" type="Area2D" parent="."]
+collision_mask = 2
+script = ExtResource("2_c3gog")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="New Chunk Spawn Detector"]
+shape = SubResource("RectangleShape2D_t6mhj")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -76.0
+offset_top = -70.0
+offset_right = 78.0
+offset_bottom = -67.0
+color = Color(0.368627, 0.517647, 0.341176, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+offset_left = -75.0
+offset_top = 66.0
+offset_right = 75.0
+offset_bottom = 69.0
+color = Color(0.368627, 0.517647, 0.341176, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="."]
+offset_left = 72.0
+offset_top = -38.0
+offset_right = 73.0
+offset_bottom = -37.0
+scale = Vector2(1, 0.6)
+color = Color(0.427451, 0.431373, 0.435294, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="."]
+offset_left = 71.0
+offset_top = -67.0
+offset_right = 73.0
+offset_bottom = -37.6
+color = Color(0.6, 0.6, 0.6, 1)
+
+[connection signal="body_entered" from="New Chunk Spawn Detector" to="New Chunk Spawn Detector" method="_on_body_entered"]

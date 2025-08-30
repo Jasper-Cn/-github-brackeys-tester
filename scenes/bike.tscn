@@ -1,0 +1,82 @@
+[gd_scene load_steps=11 format=3 uid="uid://b2nldleqd7l8"]
+
+[ext_resource type="Script" uid="uid://cwrke4t7rk702" path="res://scripts/bike.gd" id="1_oy3wg"]
+[ext_resource type="Texture2D" uid="uid://bflspv36ikmng" path="res://assets/handmade/motocycle sprites/def1.png" id="2_7nrme"]
+[ext_resource type="Texture2D" uid="uid://dufg6c7lu6gbk" path="res://assets/handmade/motocycle sprites/def2.png" id="3_d1jr7"]
+[ext_resource type="Texture2D" uid="uid://dkxn0qfagu8g6" path="res://assets/handmade/motocycle sprites/def3.png" id="4_o7eds"]
+[ext_resource type="Texture2D" uid="uid://5dx72k4iwqfu" path="res://assets/handmade/motocycle sprites/right1.png" id="5_irgsv"]
+[ext_resource type="Texture2D" uid="uid://bldfojjueq8w2" path="res://assets/handmade/motocycle sprites/right2.png" id="6_qtgu3"]
+[ext_resource type="Texture2D" uid="uid://buh2u5e5sq8ws" path="res://assets/handmade/motocycle sprites/left1.png" id="7_1ced1"]
+[ext_resource type="Texture2D" uid="uid://coq5xvaup2nn" path="res://assets/handmade/motocycle sprites/left2.png" id="8_uqvew"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b0jew"]
+size = Vector2(17, 4.5)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fdhfo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_7nrme")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_d1jr7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_o7eds")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_7nrme")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_irgsv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_qtgu3")
+}],
+"loop": true,
+"name": &"turn_down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_1ced1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_uqvew")
+}],
+"loop": true,
+"name": &"turn_up",
+"speed": 5.0
+}]
+
+[node name="bike" type="CharacterBody2D"]
+z_index = 2
+scale = Vector2(0.855, 0.855)
+collision_layer = 2
+script = ExtResource("1_oy3wg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1.5, -1)
+shape = SubResource("RectangleShape2D_b0jew")
+
+[node name="Stun Timer" type="Timer" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+rotation = 1.5708
+scale = Vector2(0.015, 0.015)
+sprite_frames = SubResource("SpriteFrames_fdhfo")
+autoplay = "default"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+
+[connection signal="timeout" from="Stun Timer" to="." method="_on_stun_timer_timeout"]

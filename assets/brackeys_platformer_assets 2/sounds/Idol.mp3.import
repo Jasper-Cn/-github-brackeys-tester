@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cxtucr0531qx8"
+path="res://.godot/imported/Idol.mp3-414d0a6c9c89df5ea993b8a395659aa0.mp3str"
+
+[deps]
+
+source_file="res://assets/brackeys_platformer_assets 2/sounds/Idol.mp3"
+dest_files=["res://.godot/imported/Idol.mp3-414d0a6c9c89df5ea993b8a395659aa0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

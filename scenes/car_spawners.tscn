@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://dhl6sf4odo85v"]
+
+[ext_resource type="Script" uid="uid://dwqnb7taho446" path="res://scripts/lane.gd" id="1_3udvb"]
+
+[node name="CarSpawners" type="Node2D"]
+script = ExtResource("1_3udvb")
+
+[node name="Spawner" type="Marker2D" parent="."]
+position = Vector2(-1120, 0)
+
+[node name="SpawnTimer" type="Timer" parent="."]
+wait_time = 1.08

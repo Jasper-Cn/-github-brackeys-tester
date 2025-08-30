@@ -1,0 +1,30 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1756092901
+icon.svg::CompressedTexture2D/CompressedTexture2D::3249147360624055263::1755971791::1755972007::1::::<><><>0<>0<>6da9a62d7c1fbc7ec8278d395e3f3beb<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://assets/::1755972607
+::res://assets/brackeys_platformer_assets 2/::1755972607
+LICENSE & CREDITS.txt::TextFile/TextFile::-1::1755972590::0::1::::<><><>0<>0<><>::
+::res://assets/brackeys_platformer_assets 2/fonts/::1755972607
+PixelOperator8-Bold.ttf::FontFile/FontFile::5298715481505130376::1755972590::1755972604::1::::<><><>0<>0<>3020d1b46da6df408e717c19a874d596<>res://.godot/imported/PixelOperator8-Bold.ttf-72f38344d4d593d01c12bc95a92e8438.fontdata::
+PixelOperator8.ttf::FontFile/FontFile::2514811595125869122::1755972590::1755972604::1::::<><><>0<>0<>be6060790386b77e28ce979be2a5e114<>res://.godot/imported/PixelOperator8.ttf-e02e044d40b8897b68d96506313be996.fontdata::
+::res://assets/brackeys_platformer_assets 2/music/::1755972607
+time_for_adventure.mp3::AudioStreamMP3/AudioStreamMP3::3289353643210005798::1755972590::1755972604::1::::<><><>0<>0<>0a4fb3db31d92e090d03a78439e7675e<>res://.godot/imported/time_for_adventure.mp3-18b752f3539774d17da9cb738d73c326.mp3str::
+::res://assets/brackeys_platformer_assets 2/sounds/::1755972607
+coin.wav::AudioStreamWAV/AudioStreamWAV::5884228958388811333::1755972590::1755972604::1::::<><><>0<>0<>8669980d4751bd4c484b948e4e2aca40<>res://.godot/imported/coin.wav-58cbd19a0907e2e7647e4c93eb58c56d.sample::
+explosion.wav::AudioStreamWAV/AudioStreamWAV::3205206489601340131::1755972590::1755972604::1::::<><><>0<>0<>2facdcdb5da380b1d5be9c3e843bda7c<>res://.godot/imported/explosion.wav-fbfebf122e397a832c2fd960cb6b1807.sample::
+hurt.wav::AudioStreamWAV/AudioStreamWAV::202004841157141448::1755972590::1755972604::1::::<><><>0<>0<>742c23e796ea6efe24b7f0ba58b76bcd<>res://.godot/imported/hurt.wav-49490de67baf2d3e805746530308d3ce.sample::
+jump.wav::AudioStreamWAV/AudioStreamWAV::6847135414484266727::1755972590::1755972604::1::::<><><>0<>0<>1773840c57722b68371b91e3d40061d5<>res://.godot/imported/jump.wav-8316877a54a62eccb09b1fcd7e43aa7d.sample::
+power_up.wav::AudioStreamWAV/AudioStreamWAV::5955655554647900982::1755972590::1755972604::1::::<><><>0<>0<>55a5f1047eba2784d2ce812ae4ab23a2<>res://.godot/imported/power_up.wav-edf59b7f6188e86b9f83b0133e415d2b.sample::
+tap.wav::AudioStreamWAV/AudioStreamWAV::4152327275305249512::1755972590::1755972604::1::::<><><>0<>0<>ba379e4b5e31860f6afc98de86b90ad5<>res://.godot/imported/tap.wav-2de7d7b0c7d68aa5a927b6a08b64caef.sample::
+::res://assets/brackeys_platformer_assets 2/sprites/::1755972607
+coin.png::CompressedTexture2D/CompressedTexture2D::5807790603875158881::1755972590::1755972604::1::::<><><>0<>0<>02b4114b670344871566add32f8f7c18<>res://.godot/imported/coin.png-739f7dccef79db57d8d281fb4d10950a.ctex::
+fruit.png::CompressedTexture2D/CompressedTexture2D::318854656726680399::1755972590::1755972604::1::::<><><>0<>0<>a75886bd3a186cbaa4a30d046b9551e2<>res://.godot/imported/fruit.png-c9a73c07fc247f9fba6eaf6c66c230ad.ctex::
+knight.png::CompressedTexture2D/CompressedTexture2D::877908619827319798::1755972590::1755972604::1::::<><><>0<>0<>3040555a4f98c506581c638d89f9f2bd<>res://.godot/imported/knight.png-6ebd99da6537ff7b02e9b9fc1dbfbf7b.ctex::
+platforms.png::CompressedTexture2D/CompressedTexture2D::4850977013686198156::1755972590::1755972604::1::::<><><>0<>0<>53b4985d47ec34baa687642347576c09<>res://.godot/imported/platforms.png-729ef93f5f7eafd70d04064257711453.ctex::
+slime_green.png::CompressedTexture2D/CompressedTexture2D::9182914331268212920::1755972590::1755972604::1::::<><><>0<>0<>9423ea39c7240c190c5186dbd5fc0253<>res://.godot/imported/slime_green.png-dc7fbaf8f2e33e0f992da732ddbaad91.ctex::
+slime_purple.png::CompressedTexture2D/CompressedTexture2D::1999442877252069394::1755972590::1755972604::1::::<><><>0<>0<>96826d9bb2b7e3641fec5d30eb744f05<>res://.godot/imported/slime_purple.png-cb2480994a6f51e3d7175b3dbe47f25e.ctex::
+world_tileset.png::CompressedTexture2D/CompressedTexture2D::4375207574438965114::1755972590::1755972604::1::::<><><>0<>0<>db7d23f15d54b6777b81c280256a4d3c<>res://.godot/imported/world_tileset.png-300200daeb9e0b191345b8cf2aed7ffe.ctex::
+::res://scenes/::1755972815
+game.tscn::PackedScene::8641747181213961283::1755972815::0::1::::<><><>0<>0<><>::uid://bd35rynos64p1::::res://scripts/game_manager.gd
+::res://scripts/::1755973164
+game_manager.gd::GDScript::2656642941304512420::1755973160::0::1::::<>Node<><>0<>0<><>::
