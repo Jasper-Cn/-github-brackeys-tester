@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://dx4alm7spt1cb"]
 
-[ext_resource type="PackedScene" uid="uid://b2nldleqd7l8" path="res://scenes/bike.tscn" id="1_uwrxv"]
+[ext_resource type="PackedScene" uid="uid://ctxp11s78lnjx" path="res://scenes/bike.tscn" id="1_uwrxv"]
 [ext_resource type="PackedScene" uid="uid://c8a2pywu578h" path="res://scenes/spawner.tscn" id="2_iywne"]
 [ext_resource type="FontFile" uid="uid://dy7hhgxec3873" path="res://assets/Gaegu-Bold.ttf" id="2_u5sy4"]
 [ext_resource type="Script" uid="uid://ve3kpygen1ju" path="res://scripts/game_manager.gd" id="2_yqjtg"]
@@ -26,7 +26,6 @@ offset_top = -66.0
 offset_right = 96.0
 offset_bottom = -38.0
 color = Color(0.6, 0.6, 0.6, 1)
-metadata/_edit_use_anchors_ = true
 
 [node name="Lane3" parent="prespawned lanes" instance=ExtResource("3_lnu2h")]
 position = Vector2(-144, 0)
@@ -38,7 +37,6 @@ offset_top = -66.0
 offset_right = 100.0
 offset_bottom = -38.0
 color = Color(0.6, 0.6, 0.6, 1)
-metadata/_edit_use_anchors_ = true
 
 [node name="Lane4" parent="prespawned lanes" instance=ExtResource("3_lnu2h")]
 position = Vector2(72, 0)
@@ -50,7 +48,6 @@ offset_top = -66.0
 offset_right = 100.0
 offset_bottom = -38.0
 color = Color(0.6, 0.6, 0.6, 1)
-metadata/_edit_use_anchors_ = true
 
 [node name="Lane5" parent="prespawned lanes" instance=ExtResource("3_lnu2h")]
 position = Vector2(144, 0)
@@ -62,7 +59,6 @@ offset_top = -66.0
 offset_right = 100.0
 offset_bottom = -38.0
 color = Color(0.6, 0.6, 0.6, 1)
-metadata/_edit_use_anchors_ = true
 
 [node name="Lane6" parent="prespawned lanes" instance=ExtResource("3_lnu2h")]
 position = Vector2(216, 0)
@@ -74,7 +70,6 @@ offset_top = -66.0
 offset_right = 100.0
 offset_bottom = -38.0
 color = Color(0.6, 0.6, 0.6, 1)
-metadata/_edit_use_anchors_ = true
 
 [node name="UI elements" type="CanvasLayer" parent="."]
 unique_name_in_owner = true
@@ -86,7 +81,6 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_u5sy4")
 theme_override_font_sizes/font_size = 64
 text = "Timer Label"
-metadata/_edit_use_anchors_ = true
 
 [node name="Timer" type="Timer" parent="UI elements/time label"]
 
@@ -119,7 +113,6 @@ offset_bottom = 149.0
 theme_override_fonts/font = ExtResource("2_u5sy4")
 theme_override_font_sizes/font_size = 56
 text = "Deliveries Remaining: 3"
-metadata/_edit_use_anchors_ = true
 
 [node name="Bike" parent="." instance=ExtResource("1_uwrxv")]
 z_index = 3
@@ -127,7 +120,7 @@ position = Vector2(0, 2)
 
 [node name="Camera2D" type="Camera2D" parent="Bike"]
 position = Vector2(0, -2)
-zoom = Vector2(4, 4)
+zoom = Vector2(2, 2)
 
 [node name="back" type="Node2D" parent="Bike"]
 

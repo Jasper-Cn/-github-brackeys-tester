@@ -6,12 +6,13 @@ extends Node2D
 var car_template = preload("res://scenes/NPCcar.tscn")
 
 # Set possible min/max wait times for cars to spawn
-const minSpawnTime: float = 5
-const maxSpawnTime: float = 9
+const minSpawnTime: float = 4
+const maxSpawnTime: float = 10
 const STARTING_BEHIND_X = 100 # x that the car spawns behind the player
 
-
 func _ready() -> void:
+	var my_car = spawn_car()
+	my_car.position.x = position.x -  randf_range(300, 100)
 	if front:
 		spawn_timer.wait_time = randf_range(minSpawnTime, maxSpawnTime*.5)
 	else:
@@ -27,8 +28,9 @@ func spawn_car():
 		my_car.position.x = get_parent().get_parent().position.x - STARTING_BEHIND_X
 	my_car.position.y = position.y
 	# family tree be like
-	get_parent().get_parent().get_parent().add_child(my_car)
+	get_parent().get_parent().get_parent().add_child.call_deferred(my_car)
 	my_car.direction = 1
+	return my_car
  
 # Spawns new car and restarts timer at random interval
 func _on_spawn_timer_timeout() -> void:

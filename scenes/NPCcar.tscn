@@ -4,12 +4,14 @@
 [ext_resource type="Texture2D" uid="uid://spjrp5ogp547" path="res://assets/handmade/car2.webp" id="2_g51ie"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g51ie"]
-size = Vector2(25.4545, 10.9091)
+size = Vector2(28.1818, 14.5455)
 
-[node name="Car" type="Area2D"]
+[node name="Car" type="RigidBody2D"]
 z_index = 1
 scale = Vector2(0.55, 0.55)
+collision_layer = 3
 collision_mask = 2
+freeze = true
 script = ExtResource("1_g51ie")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -18,7 +20,7 @@ scale = Vector2(0.02, 0.02)
 texture = ExtResource("2_g51ie")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(4.33488e-07, 0)
+position = Vector2(0, 1.76105e-07)
 shape = SubResource("RectangleShape2D_g51ie")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
